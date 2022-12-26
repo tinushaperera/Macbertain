@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="en-US" original="Please update this value">
+    <body>
+      <group id="body">
+        <trans-unit id="Codeunit 1755608761 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The Qty. to Invoice must be equal to Return Qty. Received.</source>
+          <target>The Qty. to Invoice must be equal to Return Qty. Received.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Calculate Tax Of Company - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3697606697 - Method 1682746479 - NamedType 3980448089" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Approval -  %1</source>
+          <target>Customer Approval -  %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mail Notification Management - Method SendMail - NamedType TestMailTitleTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3697606697 - Method 1682746479 - NamedType 1921832410" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer code  : %1        Name:%2 </source>
+          <target>Customer code  : %1        Name:%2 </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mail Notification Management - Method SendMail - NamedType TestMailBodyTxt1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3697606697 - Method 1682746479 - NamedType 1111599815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Message sent successfully</source>
+          <target>Message sent successfully</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mail Notification Management - Method SendMail - NamedType TestMailSuccessMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3697606697 - Method 1682746479 - NamedType 8742559" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved By : %1</source>
+          <target>Approved By : %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Mail Notification Management - Method SendMail - NamedType TestMailBodyTxt2</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 2476940767" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approval Setup not found.</source>
+          <target>Approval Setup not found.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text000</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 3114637384" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 %2 requires further approval.\\Approval request entries have been created.</source>
+          <target>%1 %2 requires further approval.\\Approval request entries have been created.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text001</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 3752334001" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The approval request cannot be canceled because the %1 %2 has already approved and send for next level approval.</source>
+          <target>The approval request cannot be canceled because the %1 %2 has already approved and send for next level approval.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text002</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 95063322" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 %2 approval request cancelled.</source>
+          <target>%1 %2 approval request cancelled.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text003</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 732759939" size-unit="char" translate="yes" xml:space="preserve">
+          <source>More than one entries found.</source>
+          <target>More than one entries found.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text004</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 1370456556" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The %1 %2 does not have any Lines.</source>
+          <target>The %1 %2 does not have any Lines.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text005</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 2008153173" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Next approve level not defined.</source>
+          <target>Next approve level not defined.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text006</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 2645849790" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only created user can send for approval.</source>
+          <target>Only created user can send for approval.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text007</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 3283546407" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Only created user can cancel the request.</source>
+          <target>Only created user can cancel the request.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text008</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 1026443335" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics NAV: %1 Mail</source>
+          <target>Microsoft Dynamics NAV: %1 Mail</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text011</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 3148584511" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No %1 Customer %2 has been %3 .</source>
+          <target>Order No %1 Customer %2 has been %3 .</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text044</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 3786281128" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order No %1 Customer %2 has been %3 and send the e-mail to sales person.</source>
+          <target>Order No %1 Customer %2 has been %3 and send the e-mail to sales person.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text045</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 129010449" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Order Status</source>
+          <target>Order Status</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text046</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 766707066" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sales order no. %1 has been sent to your approval.</source>
+          <target>The sales order no. %1 has been sent to your approval.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text047</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 2211009323" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Microsoft Dynamics NAV Approval System.</source>
+          <target>Microsoft Dynamics NAV Approval System.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text048</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3231624919 - NamedType 2848705940" size-unit="char" translate="yes" xml:space="preserve">
+          <source>The sales return order no.  %1 has been sent to your approval.</source>
+          <target>The sales return order no.  %1 has been sent to your approval.</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit Client Approval Management - NamedType Text049</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3828895772 - Method 1682746479 - NamedType 3980448089" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer Approval -  %1</source>
+          <target>Customer Approval -  %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit My Notification 1 - Method SendMail - NamedType TestMailTitleTxt</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3828895772 - Method 1682746479 - NamedType 1921832410" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Customer code  : %1        Name:%2 </source>
+          <target>Customer code  : %1        Name:%2 </target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit My Notification 1 - Method SendMail - NamedType TestMailBodyTxt1</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3828895772 - Method 1682746479 - NamedType 1111599815" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Message sent successfully</source>
+          <target>Message sent successfully</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit My Notification 1 - Method SendMail - NamedType TestMailSuccessMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3828895772 - Method 1682746479 - NamedType 8742559" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Approved By : %1</source>
+          <target>Approved By : %1</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit My Notification 1 - Method SendMail - NamedType TestMailBodyTxt2</note>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>

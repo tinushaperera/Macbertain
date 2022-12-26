@@ -1,0 +1,4555 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>3605aa17-9b6c-47ab-b6c1-5c4961b41ea3</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Textbox Name="PostDateFilter">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!PostDateFilter.Value)</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.90433cm</Top>
+            <Left>0.22966cm</Left>
+            <Height>0.423cm</Height>
+            <Width>7.5cm</Width>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Textbox Name="DocNoFilter">
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value EvaluationMode="Auto">=First(Fields!DocNoFilter.Value)</Value>
+                    <Style>
+                      <FontFamily>Calibri</FontFamily>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style>
+                  <TextAlign>Left</TextAlign>
+                </Style>
+              </Paragraph>
+            </Paragraphs>
+            <Top>1.3755cm</Top>
+            <Left>0.22966cm</Left>
+            <Height>0.423cm</Height>
+            <Width>7.5cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <VerticalAlign>Middle</VerticalAlign>
+            </Style>
+          </Textbox>
+          <Tablix Name="GLEntry">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.58605cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>3.48472cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>6.66015cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>0.98149cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.81207cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.05272cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.1435cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.62062cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox534">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">G/L Acc.No</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>18</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox533">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Parameters!Description_GLEntryCaption.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>19</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Narration</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox16">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">BU</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Operation</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox13</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox535">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Parameters!DebitAmount_GLEntryCaption.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>17</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox536">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Parameters!CreditAmount_GLEntryCaption.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>16</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Bottom</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.42301cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox498">
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!GLAccNo_GLEntry.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Format>=Fields!Qty_ItemLedgEntryFormat.Value</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Style>Solid</Style>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Style>Solid</Style>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!GL_Acc_Name.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Narration">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!Narration.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Narration</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Division">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!Division.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Division</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Fields!SalesGroup.Value</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox499">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=IIF(Fields!DebitAmount_GLEntry.Value="0","",Fields!DebitAmount_GLEntry.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Format>=Fields!DebitAmount_GLEntryFormat.Value</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox500">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=IIF(Fields!CreditAmount_GLEntry.Value="0","",Fields!CreditAmount_GLEntry.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>8pt</FontSize>
+                                    <Format>=Fields!CreditAmount_GLEntryFormat.Value</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Style>Solid</Style>
+                            </LeftBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">Amount</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox12">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox12</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox18">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox15">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto" />
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox15</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Sum(Fields!DebitAmount_GLEntry.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox5</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <RightBorder>
+                              <Style>Solid</Style>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Auto">=Sum(Fields!CreditAmount_GLEntry.Value)</Value>
+                                  <Style>
+                                    <FontFamily>Calibri</FontFamily>
+                                    <FontSize>9pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Format>#,0.00;(#,0.00)</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox6</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <TopBorder>
+                              <Style>Solid</Style>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Style>Solid</Style>
+                            </BottomBorder>
+                            <RightBorder>
+                              <Style>Solid</Style>
+                            </RightBorder>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>0.075cm</PaddingLeft>
+                            <PaddingRight>0.075cm</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="GLEntry_Details_Group">
+                    <DataElementName>Detail</DataElementName>
+                  </Group>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                  <DataElementName>Detail_Collection</DataElementName>
+                  <DataElementOutput>Output</DataElementOutput>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <KeepWithGroup>Before</KeepWithGroup>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Filters>
+              <Filter>
+                <FilterExpression>=Fields!GLEntryPostDtCaption.Value</FilterExpression>
+                <Operator>GreaterThanOrEqual</Operator>
+                <FilterValues>
+                  <FilterValue>""</FilterValue>
+                </FilterValues>
+              </Filter>
+            </Filters>
+            <Top>2.72796cm</Top>
+            <Left>0.22966cm</Left>
+            <Height>1.64363cm</Height>
+            <Width>18.7207cm</Width>
+            <ZIndex>2</ZIndex>
+            <Visibility>
+              <Hidden>=iif(Fields!GLEntryPostDtCaption.Value="",true,false)</Hidden>
+            </Visibility>
+            <DataElementOutput>NoOutput</DataElementOutput>
+            <Style />
+          </Tablix>
+        </ReportItems>
+        <Height>4.70701cm</Height>
+        <Style />
+      </Body>
+      <Width>19.0216cm</Width>
+      <Page>
+        <PageHeader>
+          <Height>2.38026cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="CurrReportPageNoCaption">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Fields!PageNoCaption.Value</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.7405cm</Top>
+              <Left>17.43286cm</Left>
+              <Height>0.423cm</Height>
+              <Width>0.75cm</Width>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="DocumentEntriesCaption">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value xml:space="preserve" EvaluationMode="Auto">             </Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!Com_Name.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Left>0.72093cm</Left>
+              <Height>0.56411cm</Height>
+              <Width>13.6305cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="CompanyName">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value xml:space="preserve" EvaluationMode="Auto">             </Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=First(Fields!Com_Add.Value, "DataSet_Result")+","+
+First(Fields!Com_City.Value, "DataSet_Result")</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.59939cm</Top>
+              <Left>0.72093cm</Left>
+              <Height>0.66962cm</Height>
+              <Width>13.6305cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="ExecutionTimeTextBox">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Globals!ExecutionTime</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                        <Format>D</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.3175cm</Top>
+              <Left>15.48286cm</Left>
+              <Height>0.423cm</Height>
+              <Width>3.15cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="UserIdTextBox">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=User!UserID</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>8pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.1635cm</Top>
+              <Left>15.38286cm</Left>
+              <Height>0.42301cm</Height>
+              <Width>3.25cm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="PageNumberTextBox">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">=Globals!PageNumber</Value>
+                      <Style>
+                        <FontSize>7pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.7405cm</Top>
+              <Left>18.18286cm</Left>
+              <Height>0.423cm</Height>
+              <Width>0.45cm</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+            <Textbox Name="CompanyName2">
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">            Journal Voucher</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>12pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.4454cm</Top>
+              <Left>0.72093cm</Left>
+              <Height>0.66962cm</Height>
+              <Width>13.6305cm</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style />
+        </PageHeader>
+        <PageFooter>
+          <Height>3.38666cm</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Textbox Name="Textbox8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Prepared By :</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox8</rd:DefaultName>
+              <Top>0.17951cm</Top>
+              <Left>0.22966cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.5cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox10">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">....................................</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox10</rd:DefaultName>
+              <Top>0.17951cm</Top>
+              <Left>2.76494cm</Left>
+              <Height>0.6cm</Height>
+              <Width>3.14444cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Authorized By :</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox9</rd:DefaultName>
+              <Top>0.17951cm</Top>
+              <Left>12.53143cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.8175cm</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox11">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">....................................</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox10</rd:DefaultName>
+              <Top>0.17951cm</Top>
+              <Left>15.36948cm</Left>
+              <Height>0.6cm</Height>
+              <Width>3.58088cm</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox17">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">Checked By :</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontSize>9pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox8</rd:DefaultName>
+              <Top>0.18683cm</Top>
+              <Left>6.48044cm</Left>
+              <Height>0.6cm</Height>
+              <Width>2.5cm</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox19">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value EvaluationMode="Auto">....................................</Value>
+                      <Style>
+                        <FontFamily>Calibri</FontFamily>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox10</rd:DefaultName>
+              <Top>0.18683cm</Top>
+              <Left>9.01572cm</Left>
+              <Height>0.6cm</Height>
+              <Width>3.14444cm</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageFooter>
+        <PageHeight>29.7cm</PageHeight>
+        <PageWidth>21cm</PageWidth>
+        <InteractiveHeight>11in</InteractiveHeight>
+        <InteractiveWidth>8.5in</InteractiveWidth>
+        <LeftMargin>1cm</LeftMargin>
+        <RightMargin>0.5cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>0.3cm</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="DocNo_ServLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ServLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ServLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ServLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ServLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ServLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtLCY_ServLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtLCY_ServLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtLCY_ServLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_ServLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_ServLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_ServLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ServCntrtNo_ServLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ServCntrtNo_ServLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ServCntrtNo_ServLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_WarrantyLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_WarrantyLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_WarrantyLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_WarrantyLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_WarrantyLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_WarrantyLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_WarrantyLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_WarrantyLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_WarrantyLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_WarrantyLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_WarrantyLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_WarrantyLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_ServShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_ServShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_ServShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ServShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ServShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ServShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_SalesShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_SalesShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_SalesShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SelltoCustNo_SalesShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SelltoCustNo_SalesShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SelltoCustNo_SalesShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BilltoCustNo_SalesShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BilltoCustNo_SalesShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BilltoCustNo_SalesShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostDesc_SalesShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostDesc_SalesShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostDesc_SalesShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_SalesInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_SalesInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_SalesInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostDesc_SalesInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostDesc_SalesInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostDesc_SalesInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SelltoCustNo_SalesInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SelltoCustNo_SalesInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SelltoCustNo_SalesInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BilltoCustNo_SalesInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BilltoCustNo_SalesInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BilltoCustNo_SalesInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_SalesInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_SalesInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_SalesInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtIncVAT_SalesInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtIncVAT_SalesInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtIncVAT_SalesInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_ReturnRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_ReturnRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_ReturnRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostDesc_ReturnRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostDesc_ReturnRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostDesc_ReturnRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SelltoCustNo_RetrnRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SelltoCustNo_RetrnRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SelltoCustNo_RetrnRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BilltoCustNo_RetrnRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BilltoCustNo_RetrnRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BilltoCustNo_RetrnRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_SalesCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_SalesCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_SalesCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstDesc_SalesCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstDesc_SalesCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstDesc_SalesCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SellCustNo_SalesCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SellCustNo_SalesCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SellCustNo_SalesCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BillCustNo_SalesCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BillCustNo_SalesCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BillCustNo_SalesCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_SalesCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_SalesCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_SalesCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtIncludVAT_SalesCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtIncludVAT_SalesCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtIncludVAT_SalesCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_IssuedReminderHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_IssuedReminderHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_IssuedReminderHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PostDesc_IssReminderHeadrCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PostDesc_IssReminderHeadrCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PostDesc_IssReminderHeadrCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VATAmt_IssuedReminderHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VATAmt_IssuedReminderHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VATAmt_IssuedReminderHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemAmt_IssReminderHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemAmt_IssReminderHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemAmt_IssReminderHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_IssuedFinChrgMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_IssuedFinChrgMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_IssuedFinChrgMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstDesc_IssuedFinChrgMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstDesc_IssuedFinChrgMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstDesc_IssuedFinChrgMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RmnAmt_IssuedFinChrgMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RmnAmt_IssuedFinChrgMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RmnAmt_IssuedFinChrgMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InrstAmt_IssuedFinChrgMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>InrstAmt_IssuedFinChrgMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>InrstAmt_IssuedFinChrgMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AddFee_IssuedFinChrgMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AddFee_IssuedFinChrgMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AddFee_IssuedFinChrgMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VATAmt_IssuedFinChrgMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VATAmt_IssuedFinChrgMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VATAmt_IssuedFinChrgMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_PurchRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_PurchRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_PurchRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BuyfromVenNo_PurchRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BuyfromVenNo_PurchRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BuyfromVenNo_PurchRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PaytoVenNo_PurchRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PaytoVenNo_PurchRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PaytoVenNo_PurchRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_PurchInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_PurchInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_PurchInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstDesc_PurchInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstDesc_PurchInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstDesc_PurchInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BuyfromVenNo_PurchInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BuyfromVenNo_PurchInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BuyfromVenNo_PurchInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PaytoVenNo_PurchInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PaytoVenNo_PurchInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PaytoVenNo_PurchInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_PurchInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_PurchInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_PurchInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtIncluVAT_PurchInvHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtIncluVAT_PurchInvHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtIncluVAT_PurchInvHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_ReturnShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_ReturnShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_ReturnShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstDesc_ReturnShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstDesc_ReturnShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstDesc_ReturnShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BuyfromVenNo_ReturnShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BuyfromVenNo_ReturnShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BuyfromVenNo_ReturnShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PaytoVenNo_ReturnShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PaytoVenNo_ReturnShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PaytoVenNo_ReturnShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_PurchCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_PurchCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_PurchCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstDesc_PurchCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstDesc_PurchCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstDesc_PurchCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BuyfromVenNo_PurchCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BuyfromVenNo_PurchCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BuyfromVenNo_PurchCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PaytoVenNo_PurchCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PaytoVenNo_PurchCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PaytoVenNo_PurchCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_PurchCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_PurchCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_PurchCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtInclVAT_PurchCrMemoHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtInclVAT_PurchCrMemoHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtInclVAT_PurchCrMemoHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Status_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Status_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Status_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SourceType_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SourceType_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SourceType_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SourceNo_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SourceNo_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SourceNo_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitCost_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitCost_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitCost_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CostAmt_ProdOrderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CostAmt_ProdOrderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CostAmt_ProdOrderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_TransShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_TransShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_TransShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TransferfromCode_TransShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TransferfromCode_TransShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TransferfromCode_TransShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TransferfromName_TransShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TransferfromName_TransShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TransferfromName_TransShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TranstoCode_TransShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TranstoCode_TransShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TranstoCode_TransShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TranstoName_TransShptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TranstoName_TransShptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TranstoName_TransShptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_TransRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_TransRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_TransRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TransfromCode_TransRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TransfromCode_TransRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TransfromCode_TransRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TransfromName_TransRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TransfromName_TransRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TransfromName_TransRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TranstoCode_TransRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TranstoCode_TransRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TranstoCode_TransRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="TranstoName_TransRcptHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>TranstoName_TransRcptHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>TranstoName_TransRcptHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOMCode_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOMCode_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOMCode_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstdSourceDoc_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstdSourceDoc_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstdSourceDoc_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstdSourceNo_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstdSourceNo_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstdSourceNo_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LineNo_PostedWhseShptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LineNo_PostedWhseShptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LineNo_PostedWhseShptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOMCode_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOMCode_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOMCode_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstdSourceDoc_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstdSourceDoc_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstdSourceDoc_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="PstdSourceNo_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>PstdSourceNo_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>PstdSourceNo_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LineNo_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LineNo_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LineNo_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Description_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Description_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Description_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="VATAmount_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>VATAmount_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>VATAmount_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmount_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmount_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmount_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmount_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmount_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmount_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Quantity_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Quantity_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Quantity_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="GLAccNo_GLEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>GLAccNo_GLEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>GLAccNo_GLEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_VATEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_VATEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_VATEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amount_VATEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amount_VATEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amount_VATEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_VATEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_VATEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_VATEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustLedgEntry__Entry_No__Caption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustLedgEntry__Entry_No__Caption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustLedgEntry__Entry_No__Caption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amount_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amount_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amount_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainAmt_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainAmt_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainAmt_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CurrCode_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CurrCode_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CurrCode_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CustNo_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CustNo_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CustNo_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtLCY_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtLCY_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtLCY_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainAmtLCY_CustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainAmtLCY_CustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainAmtLCY_CustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmt_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmt_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmt_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmt_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmt_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmt_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocType_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocType_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocType_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmtLCY_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmtLCY_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmtLCY_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmtLCY_DtldCustLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmtLCY_DtldCustLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmtLCY_DtldCustLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_ReminderEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_ReminderEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_ReminderEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_ReminderEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ReminderEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ReminderEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ReminderLevel_ReminderEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ReminderLevel_ReminderEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ReminderLevel_ReminderEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="IntrstAmt_ReminderEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>IntrstAmt_ReminderEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>IntrstAmt_ReminderEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainAmt_ReminderEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainAmt_ReminderEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainAmt_ReminderEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainAmt_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainAmt_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainAmt_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="AmtLCY_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>AmtLCY_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>AmtLCY_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainAmtLCY_VenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainAmtLCY_VenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainAmtLCY_VenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmt_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmt_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmt_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmt_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmt_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmt_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocType_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocType_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocType_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmtLCY_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmtLCY_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmtLCY_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmtLCY_DtldVenLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmtLCY_DtldVenLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmtLCY_DtldVenLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_ItemLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_ItemLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_ItemLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_ItemLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ItemLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ItemLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ItemLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ItemLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ItemLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_ItemLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_ItemLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_ItemLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RemainQty_ItemLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RemainQty_ItemLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RemainQty_ItemLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_ValueEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ValueEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ValueEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ValueEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ValueEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ValueEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_ValueEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_ValueEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_ValueEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ValuedQty_ValueEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ValuedQty_ValueEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ValuedQty_ValueEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InvoicedQty_ValueEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>InvoicedQty_ValueEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>InvoicedQty_ValueEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitAmt_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitAmt_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitAmt_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitCost_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitCost_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitCost_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_PhysInvtLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_PhysInvtLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_PhysInvtLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_ResLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_ResLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_ResLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_ResLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_ResLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_ResLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_ResLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_ResLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_ResLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_ResLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_ResLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_ResLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitCost_ResLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitCost_ResLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitCost_ResLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitPrice_ResLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitPrice_ResLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitPrice_ResLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_JobLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_JobLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_JobLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_JobLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_JobLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_JobLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_JobLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_JobLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_JobLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitCostLCY_JobLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitCostLCY_JobLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitCostLCY_JobLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UnitPriceLCY_JobLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UnitPriceLCY_JobLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UnitPriceLCY_JobLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_JobLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_JobLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_JobLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_BankAccLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_BankAccLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_BankAccLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_BankAccLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_BankAccLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_BankAccLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_BankAccLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_BankAccLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_BankAccLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DebitAmt_BankAccLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DebitAmt_BankAccLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DebitAmt_BankAccLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CreditAmt_BankAccLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CreditAmt_BankAccLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CreditAmt_BankAccLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CurrCode_BankAccLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CurrCode_BankAccLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CurrCode_BankAccLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Open_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Open_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Open_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CheckNo_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CheckNo_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CheckNo_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="CheckType_CheckLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>CheckType_CheckLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>CheckType_CheckLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_FALedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_FALedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_FALedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_FALedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_FALedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_FALedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_FALedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_FALedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_FALedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_FALedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_FALedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_FALedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_MaintLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_MaintLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_MaintLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_MaintLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_MaintLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_MaintLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_MaintLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_MaintLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_MaintLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_MaintLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_MaintLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_MaintLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_InsCoverageLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_InsCoverageLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_InsCoverageLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_InsCoverageLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_InsCoverageLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_InsCoverageLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Amt_InsCoverageLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Amt_InsCoverageLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Amt_InsCoverageLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_InsCoverageLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_InsCoverageLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_InsCoverageLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="InsurNo_InsCoverageLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>InsurNo_InsCoverageLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>InsurNo_InsCoverageLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_CapLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_CapLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_CapLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="DocNo_CapLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>DocNo_CapLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>DocNo_CapLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_CapLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_CapLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_CapLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_CapLedgEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_CapLedgEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_CapLedgEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="EntryNo_WhseEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>EntryNo_WhseEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>EntryNo_WhseEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_WhseEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_WhseEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_WhseEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_WhseEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_WhseEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_WhseEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_WhseEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_WhseEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_WhseEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="RefNo_WhseEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RefNo_WhseEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RefNo_WhseEntryCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOMCode_WhseEntryCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOMCode_WhseEntryCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOMCode_WhseEntryCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>b2719e27-f11f-43d0-baee-1cf48dfce3ec</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="DocNoFilter">
+          <DataField>DocNoFilter</DataField>
+        </Field>
+        <Field Name="PostDateFilter">
+          <DataField>PostDateFilter</DataField>
+        </Field>
+        <Field Name="DocEntryNoofRecords">
+          <DataField>DocEntryNoofRecords</DataField>
+        </Field>
+        <Field Name="DocEntryTableName">
+          <DataField>DocEntryTableName</DataField>
+        </Field>
+        <Field Name="PrintAmountsInLCY">
+          <DataField>PrintAmountsInLCY</DataField>
+        </Field>
+        <Field Name="CurrencyCaptionRBC">
+          <DataField>CurrencyCaptionRBC</DataField>
+        </Field>
+        <Field Name="DocEntriesCaption">
+          <DataField>DocEntriesCaption</DataField>
+        </Field>
+        <Field Name="PageNoCaption">
+          <DataField>PageNoCaption</DataField>
+        </Field>
+        <Field Name="NavigateFiltersCaption">
+          <DataField>NavigateFiltersCaption</DataField>
+        </Field>
+        <Field Name="DocEntryNoofRecordsCptn">
+          <DataField>DocEntryNoofRecordsCptn</DataField>
+        </Field>
+        <Field Name="DocEntryTableNameCaption">
+          <DataField>DocEntryTableNameCaption</DataField>
+        </Field>
+        <Field Name="Com_Name">
+          <DataField>Com_Name</DataField>
+        </Field>
+        <Field Name="Com_Add">
+          <DataField>Com_Add</DataField>
+        </Field>
+        <Field Name="Com_City">
+          <DataField>Com_City</DataField>
+        </Field>
+        <Field Name="Com_Tell">
+          <DataField>Com_Tell</DataField>
+        </Field>
+        <Field Name="Com_Fax">
+          <DataField>Com_Fax</DataField>
+        </Field>
+        <Field Name="PostDate_ServiceLedgEntry">
+          <DataField>PostDate_ServiceLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_ServLedgEntry">
+          <DataField>DocNo_ServLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_ServLedgEntry">
+          <DataField>Desc_ServLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_ServLedgEntry">
+          <DataField>AmtLCY_ServLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_ServLedgEntryFormat">
+          <DataField>AmtLCY_ServLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_ServLedgEntry">
+          <DataField>EntryNo_ServLedgEntry</DataField>
+        </Field>
+        <Field Name="ServCntrtNo_ServLedgEntry">
+          <DataField>ServCntrtNo_ServLedgEntry</DataField>
+        </Field>
+        <Field Name="ServLedgEntryPostDtCaption">
+          <DataField>ServLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_WarrantyLedgEntry">
+          <DataField>EntryNo_WarrantyLedgEntry</DataField>
+        </Field>
+        <Field Name="PostDt_WarrantyLedgEntry">
+          <DataField>PostDt_WarrantyLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_WarrantyLedgEntry">
+          <DataField>DocNo_WarrantyLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_WarrantyLedgEntry">
+          <DataField>Desc_WarrantyLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_WarrantyLedgEntry">
+          <DataField>Amt_WarrantyLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_WarrantyLedgEntryFormat">
+          <DataField>Amt_WarrantyLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="WarrantyLedgEntryPostDtCaption">
+          <DataField>WarrantyLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="CurrencyCaption">
+          <DataField>CurrencyCaption</DataField>
+        </Field>
+        <Field Name="PostDate_ServShptHeader">
+          <DataField>PostDate_ServShptHeader</DataField>
+        </Field>
+        <Field Name="No_ServShptHeader">
+          <DataField>No_ServShptHeader</DataField>
+        </Field>
+        <Field Name="Desc_ServShptHeader">
+          <DataField>Desc_ServShptHeader</DataField>
+        </Field>
+        <Field Name="CurrencyCode_ServShptHeader">
+          <DataField>CurrencyCode_ServShptHeader</DataField>
+        </Field>
+        <Field Name="ServShptHeaderPostDateCaption">
+          <DataField>ServShptHeaderPostDateCaption</DataField>
+        </Field>
+        <Field Name="SalesShipmentHdrCurryCaption">
+          <DataField>SalesShipmentHdrCurryCaption</DataField>
+        </Field>
+        <Field Name="PostingDt_SalesShptHeader">
+          <DataField>PostingDt_SalesShptHeader</DataField>
+        </Field>
+        <Field Name="No_SalesShptHeader">
+          <DataField>No_SalesShptHeader</DataField>
+        </Field>
+        <Field Name="SelltoCustNo_SalesShptHeader">
+          <DataField>SelltoCustNo_SalesShptHeader</DataField>
+        </Field>
+        <Field Name="BilltoCustNo_SalesShptHeader">
+          <DataField>BilltoCustNo_SalesShptHeader</DataField>
+        </Field>
+        <Field Name="PostDesc_SalesShptHeader">
+          <DataField>PostDesc_SalesShptHeader</DataField>
+        </Field>
+        <Field Name="CurrCode_SalesShptHeader">
+          <DataField>CurrCode_SalesShptHeader</DataField>
+        </Field>
+        <Field Name="SalesShptHeaderPostingDtCaption">
+          <DataField>SalesShptHeaderPostingDtCaption</DataField>
+        </Field>
+        <Field Name="SalesInvHdrCurryCaption">
+          <DataField>SalesInvHdrCurryCaption</DataField>
+        </Field>
+        <Field Name="PostDate_SalesInvHeader">
+          <DataField>PostDate_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="No_SalesInvHeader">
+          <DataField>No_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="PostDesc_SalesInvHeader">
+          <DataField>PostDesc_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="SelltoCustNo_SalesInvHeader">
+          <DataField>SelltoCustNo_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="BilltoCustNo_SalesInvHeader">
+          <DataField>BilltoCustNo_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="Amt_SalesInvHeader">
+          <DataField>Amt_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="Amt_SalesInvHeaderFormat">
+          <DataField>Amt_SalesInvHeaderFormat</DataField>
+        </Field>
+        <Field Name="AmtIncVAT_SalesInvHeader">
+          <DataField>AmtIncVAT_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="AmtIncVAT_SalesInvHeaderFormat">
+          <DataField>AmtIncVAT_SalesInvHeaderFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_SalesInvHeader">
+          <DataField>CurrCode_SalesInvHeader</DataField>
+        </Field>
+        <Field Name="SalesInvHeaderPostDateCaption">
+          <DataField>SalesInvHeaderPostDateCaption</DataField>
+        </Field>
+        <Field Name="ReturnRcptHdrCurryCaption">
+          <DataField>ReturnRcptHdrCurryCaption</DataField>
+        </Field>
+        <Field Name="PostDt_ReturnRcptHeader">
+          <DataField>PostDt_ReturnRcptHeader</DataField>
+        </Field>
+        <Field Name="No_ReturnRcptHeader">
+          <DataField>No_ReturnRcptHeader</DataField>
+        </Field>
+        <Field Name="PostDesc_ReturnRcptHeader">
+          <DataField>PostDesc_ReturnRcptHeader</DataField>
+        </Field>
+        <Field Name="SelltoCustNo_RetrnRcptHeader">
+          <DataField>SelltoCustNo_RetrnRcptHeader</DataField>
+        </Field>
+        <Field Name="BilltoCustNo_RetrnRcptHeader">
+          <DataField>BilltoCustNo_RetrnRcptHeader</DataField>
+        </Field>
+        <Field Name="CurrCode_ReturnRcptHeader">
+          <DataField>CurrCode_ReturnRcptHeader</DataField>
+        </Field>
+        <Field Name="ReturnRcptHeaderPostDtCaption">
+          <DataField>ReturnRcptHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="SalesCrMemoHdrCurrCaption">
+          <DataField>SalesCrMemoHdrCurrCaption</DataField>
+        </Field>
+        <Field Name="PostDt_SalesCrMemoHeader">
+          <DataField>PostDt_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="No_SalesCrMemoHeader">
+          <DataField>No_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="PstDesc_SalesCrMemoHeader">
+          <DataField>PstDesc_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="SellCustNo_SalesCrMemoHeader">
+          <DataField>SellCustNo_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="BillCustNo_SalesCrMemoHeader">
+          <DataField>BillCustNo_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="Amt_SalesCrMemoHeader">
+          <DataField>Amt_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="Amt_SalesCrMemoHeaderFormat">
+          <DataField>Amt_SalesCrMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="AmtIncludVAT_SalesCrMemoHeader">
+          <DataField>AmtIncludVAT_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="AmtIncludVAT_SalesCrMemoHeaderFormat">
+          <DataField>AmtIncludVAT_SalesCrMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_SalesCrMemoHeader">
+          <DataField>CurrCode_SalesCrMemoHeader</DataField>
+        </Field>
+        <Field Name="SalesCrMemoHeaderPostDtCaption">
+          <DataField>SalesCrMemoHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="IssuedRemHdrCurCaption">
+          <DataField>IssuedRemHdrCurCaption</DataField>
+        </Field>
+        <Field Name="PostDt_IssuedReminderHeader">
+          <DataField>PostDt_IssuedReminderHeader</DataField>
+        </Field>
+        <Field Name="No_IssuedReminderHeader">
+          <DataField>No_IssuedReminderHeader</DataField>
+        </Field>
+        <Field Name="PostDesc_IssReminderHeadr">
+          <DataField>PostDesc_IssReminderHeadr</DataField>
+        </Field>
+        <Field Name="CurrCode_IssudReminderHeader">
+          <DataField>CurrCode_IssudReminderHeader</DataField>
+        </Field>
+        <Field Name="VATAmt_IssuedReminderHeader">
+          <DataField>VATAmt_IssuedReminderHeader</DataField>
+        </Field>
+        <Field Name="VATAmt_IssuedReminderHeaderFormat">
+          <DataField>VATAmt_IssuedReminderHeaderFormat</DataField>
+        </Field>
+        <Field Name="AddFee_IssuedReminderHeader">
+          <DataField>AddFee_IssuedReminderHeader</DataField>
+        </Field>
+        <Field Name="AddFee_IssuedReminderHeaderFormat">
+          <DataField>AddFee_IssuedReminderHeaderFormat</DataField>
+        </Field>
+        <Field Name="IntrstAmt_IssuReminderHeader">
+          <DataField>IntrstAmt_IssuReminderHeader</DataField>
+        </Field>
+        <Field Name="IntrstAmt_IssuReminderHeaderFormat">
+          <DataField>IntrstAmt_IssuReminderHeaderFormat</DataField>
+        </Field>
+        <Field Name="RemAmt_IssReminderHeader">
+          <DataField>RemAmt_IssReminderHeader</DataField>
+        </Field>
+        <Field Name="RemAmt_IssReminderHeaderFormat">
+          <DataField>RemAmt_IssReminderHeaderFormat</DataField>
+        </Field>
+        <Field Name="IssuedReminderHeaderPostDtCaption">
+          <DataField>IssuedReminderHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="IssuedFinChrgeCurrCaption">
+          <DataField>IssuedFinChrgeCurrCaption</DataField>
+        </Field>
+        <Field Name="PostDate_IssuedFinChgMemoHeader">
+          <DataField>PostDate_IssuedFinChgMemoHeader</DataField>
+        </Field>
+        <Field Name="No_IssuedFinChrgMemoHeader">
+          <DataField>No_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="PstDesc_IssuedFinChrgMemoHeader">
+          <DataField>PstDesc_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="RmnAmt_IssuedFinChrgMemoHeader">
+          <DataField>RmnAmt_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="RmnAmt_IssuedFinChrgMemoHeaderFormat">
+          <DataField>RmnAmt_IssuedFinChrgMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="InrstAmt_IssuedFinChrgMemoHeader">
+          <DataField>InrstAmt_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="InrstAmt_IssuedFinChrgMemoHeaderFormat">
+          <DataField>InrstAmt_IssuedFinChrgMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="AddFee_IssuedFinChrgMemoHeader">
+          <DataField>AddFee_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="AddFee_IssuedFinChrgMemoHeaderFormat">
+          <DataField>AddFee_IssuedFinChrgMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="VATAmt_IssuedFinChrgMemoHeader">
+          <DataField>VATAmt_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="VATAmt_IssuedFinChrgMemoHeaderFormat">
+          <DataField>VATAmt_IssuedFinChrgMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_IssuedFinChrgMemoHeader">
+          <DataField>CurrCode_IssuedFinChrgMemoHeader</DataField>
+        </Field>
+        <Field Name="IssuedFinChgMemoHeaderPostDateCaption">
+          <DataField>IssuedFinChgMemoHeaderPostDateCaption</DataField>
+        </Field>
+        <Field Name="PurchRcptHdrCurrCaption">
+          <DataField>PurchRcptHdrCurrCaption</DataField>
+        </Field>
+        <Field Name="PstDate_PurchRcptHeader">
+          <DataField>PstDate_PurchRcptHeader</DataField>
+        </Field>
+        <Field Name="No_PurchRcptHeader">
+          <DataField>No_PurchRcptHeader</DataField>
+        </Field>
+        <Field Name="PstDesc_PurchRcptHeader">
+          <DataField>PstDesc_PurchRcptHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVenNo_PurchRcptHeader">
+          <DataField>BuyfromVenNo_PurchRcptHeader</DataField>
+        </Field>
+        <Field Name="PaytoVenNo_PurchRcptHeader">
+          <DataField>PaytoVenNo_PurchRcptHeader</DataField>
+        </Field>
+        <Field Name="CurrCode_PurchRcptHeader">
+          <DataField>CurrCode_PurchRcptHeader</DataField>
+        </Field>
+        <Field Name="PurchRcptHeaderPostDtCaption">
+          <DataField>PurchRcptHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="PurchInvHdrCurrCaption">
+          <DataField>PurchInvHdrCurrCaption</DataField>
+        </Field>
+        <Field Name="PstDate_PurchInvHeader">
+          <DataField>PstDate_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="No_PurchInvHeader">
+          <DataField>No_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="PstDesc_PurchInvHeader">
+          <DataField>PstDesc_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVenNo_PurchInvHeader">
+          <DataField>BuyfromVenNo_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="PaytoVenNo_PurchInvHeader">
+          <DataField>PaytoVenNo_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="Amt_PurchInvHeader">
+          <DataField>Amt_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="Amt_PurchInvHeaderFormat">
+          <DataField>Amt_PurchInvHeaderFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_PurchInvHeader">
+          <DataField>CurrCode_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="AmtIncluVAT_PurchInvHeader">
+          <DataField>AmtIncluVAT_PurchInvHeader</DataField>
+        </Field>
+        <Field Name="AmtIncluVAT_PurchInvHeaderFormat">
+          <DataField>AmtIncluVAT_PurchInvHeaderFormat</DataField>
+        </Field>
+        <Field Name="PurchInvHeaderPostDtCaption">
+          <DataField>PurchInvHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="RtrnShpmntHdrCurrCaption">
+          <DataField>RtrnShpmntHdrCurrCaption</DataField>
+        </Field>
+        <Field Name="PstDate_ReturnShptHeader">
+          <DataField>PstDate_ReturnShptHeader</DataField>
+        </Field>
+        <Field Name="No_ReturnShptHeader">
+          <DataField>No_ReturnShptHeader</DataField>
+        </Field>
+        <Field Name="PstDesc_ReturnShptHeader">
+          <DataField>PstDesc_ReturnShptHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVenNo_ReturnShptHeader">
+          <DataField>BuyfromVenNo_ReturnShptHeader</DataField>
+        </Field>
+        <Field Name="PaytoVenNo_ReturnShptHeader">
+          <DataField>PaytoVenNo_ReturnShptHeader</DataField>
+        </Field>
+        <Field Name="CurrCode_ReturnShptHeader">
+          <DataField>CurrCode_ReturnShptHeader</DataField>
+        </Field>
+        <Field Name="ReturnShptHeaderPostDtCaption">
+          <DataField>ReturnShptHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="PurchCrMemoHdrCurrCaption">
+          <DataField>PurchCrMemoHdrCurrCaption</DataField>
+        </Field>
+        <Field Name="PstDate_PurchCrMemoHeader">
+          <DataField>PstDate_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="No_PurchCrMemoHeader">
+          <DataField>No_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="PstDesc_PurchCrMemoHeader">
+          <DataField>PstDesc_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="BuyfromVenNo_PurchCrMemoHeader">
+          <DataField>BuyfromVenNo_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="PaytoVenNo_PurchCrMemoHeader">
+          <DataField>PaytoVenNo_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="Amt_PurchCrMemoHeader">
+          <DataField>Amt_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="Amt_PurchCrMemoHeaderFormat">
+          <DataField>Amt_PurchCrMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_PurchCrMemoHeader">
+          <DataField>CurrCode_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="AmtInclVAT_PurchCrMemoHeader">
+          <DataField>AmtInclVAT_PurchCrMemoHeader</DataField>
+        </Field>
+        <Field Name="AmtInclVAT_PurchCrMemoHeaderFormat">
+          <DataField>AmtInclVAT_PurchCrMemoHeaderFormat</DataField>
+        </Field>
+        <Field Name="PurchCrMemoHdrPostDtCaption">
+          <DataField>PurchCrMemoHdrPostDtCaption</DataField>
+        </Field>
+        <Field Name="No_ProdOrder">
+          <DataField>No_ProdOrder</DataField>
+        </Field>
+        <Field Name="Status_ProdOrder">
+          <DataField>Status_ProdOrder</DataField>
+        </Field>
+        <Field Name="StatusCaption_ProdOrder">
+          <DataField>StatusCaption_ProdOrder</DataField>
+        </Field>
+        <Field Name="Desc_ProdOrder">
+          <DataField>Desc_ProdOrder</DataField>
+        </Field>
+        <Field Name="SourceType_ProdOrder">
+          <DataField>SourceType_ProdOrder</DataField>
+        </Field>
+        <Field Name="SourceNo_ProdOrder">
+          <DataField>SourceNo_ProdOrder</DataField>
+        </Field>
+        <Field Name="UnitCost_ProdOrder">
+          <DataField>UnitCost_ProdOrder</DataField>
+        </Field>
+        <Field Name="UnitCost_ProdOrderFormat">
+          <DataField>UnitCost_ProdOrderFormat</DataField>
+        </Field>
+        <Field Name="CostAmt_ProdOrder">
+          <DataField>CostAmt_ProdOrder</DataField>
+        </Field>
+        <Field Name="CostAmt_ProdOrderFormat">
+          <DataField>CostAmt_ProdOrderFormat</DataField>
+        </Field>
+        <Field Name="PstDate_TransShptHeader">
+          <DataField>PstDate_TransShptHeader</DataField>
+        </Field>
+        <Field Name="No_TransShptHeader">
+          <DataField>No_TransShptHeader</DataField>
+        </Field>
+        <Field Name="TransferfromCode_TransShptHeader">
+          <DataField>TransferfromCode_TransShptHeader</DataField>
+        </Field>
+        <Field Name="TransferfromName_TransShptHeader">
+          <DataField>TransferfromName_TransShptHeader</DataField>
+        </Field>
+        <Field Name="TranstoCode_TransShptHeader">
+          <DataField>TranstoCode_TransShptHeader</DataField>
+        </Field>
+        <Field Name="TranstoName_TransShptHeader">
+          <DataField>TranstoName_TransShptHeader</DataField>
+        </Field>
+        <Field Name="TransShptHeaderPostDtCaption">
+          <DataField>TransShptHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_TransRcptHeader">
+          <DataField>PstDate_TransRcptHeader</DataField>
+        </Field>
+        <Field Name="No_TransRcptHeader">
+          <DataField>No_TransRcptHeader</DataField>
+        </Field>
+        <Field Name="TransfromCode_TransRcptHeader">
+          <DataField>TransfromCode_TransRcptHeader</DataField>
+        </Field>
+        <Field Name="TransfromName_TransRcptHeader">
+          <DataField>TransfromName_TransRcptHeader</DataField>
+        </Field>
+        <Field Name="TranstoCode_TransRcptHeader">
+          <DataField>TranstoCode_TransRcptHeader</DataField>
+        </Field>
+        <Field Name="TranstoName_TransRcptHeader">
+          <DataField>TranstoName_TransRcptHeader</DataField>
+        </Field>
+        <Field Name="TransRcptHeaderPostDtCaption">
+          <DataField>TransRcptHeaderPostDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_PostedWhseShptLine">
+          <DataField>PstDate_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="ItemNo_PostedWhseShptLine">
+          <DataField>ItemNo_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseShptLine">
+          <DataField>Qty_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseShptLineFormat">
+          <DataField>Qty_PostedWhseShptLineFormat</DataField>
+        </Field>
+        <Field Name="UOMCode_PostedWhseShptLine">
+          <DataField>UOMCode_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Desc_PostedWhseShptLine">
+          <DataField>Desc_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="PstdSourceDoc_PostedWhseShptLine">
+          <DataField>PstdSourceDoc_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="PstdSourceNo_PostedWhseShptLine">
+          <DataField>PstdSourceNo_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="No_PostedWhseShptLine">
+          <DataField>No_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="LineNo_PostedWhseShptLine">
+          <DataField>LineNo_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="PostedWhseShptLinePostDtCaption">
+          <DataField>PostedWhseShptLinePostDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_PostedWhseRcptLine">
+          <DataField>PstDate_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="Desc_PostedWhseRcptLine">
+          <DataField>Desc_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="ItemNo_PostedWhseRcptLine">
+          <DataField>ItemNo_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="UOMCode_PostedWhseRcptLine">
+          <DataField>UOMCode_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseRcptLine">
+          <DataField>Qty_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseRcptLineFormat">
+          <DataField>Qty_PostedWhseRcptLineFormat</DataField>
+        </Field>
+        <Field Name="PstdSourceDoc_PostedWhseRcptLine">
+          <DataField>PstdSourceDoc_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="PstdSourceNo_PostedWhseRcptLine">
+          <DataField>PstdSourceNo_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="No_PostedWhseRcptLine">
+          <DataField>No_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="LineNo_PostedWhseRcptLine">
+          <DataField>LineNo_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="PostedWhseRcptLinePostDtCaption">
+          <DataField>PostedWhseRcptLinePostDtCaption</DataField>
+        </Field>
+        <Field Name="PostingDate_GLEntry">
+          <DataField>PostingDate_GLEntry</DataField>
+        </Field>
+        <Field Name="DocNo_GLEntry">
+          <DataField>DocNo_GLEntry</DataField>
+        </Field>
+        <Field Name="Description_GLEntry">
+          <DataField>Description_GLEntry</DataField>
+        </Field>
+        <Field Name="VATAmount_GLEntry">
+          <DataField>VATAmount_GLEntry</DataField>
+        </Field>
+        <Field Name="VATAmount_GLEntryFormat">
+          <DataField>VATAmount_GLEntryFormat</DataField>
+        </Field>
+        <Field Name="DebitAmount_GLEntry">
+          <DataField>DebitAmount_GLEntry</DataField>
+        </Field>
+        <Field Name="DebitAmount_GLEntryFormat">
+          <DataField>DebitAmount_GLEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmount_GLEntry">
+          <DataField>CreditAmount_GLEntry</DataField>
+        </Field>
+        <Field Name="CreditAmount_GLEntryFormat">
+          <DataField>CreditAmount_GLEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_GLEntry">
+          <DataField>EntryNo_GLEntry</DataField>
+        </Field>
+        <Field Name="Quantity_GLEntry">
+          <DataField>Quantity_GLEntry</DataField>
+        </Field>
+        <Field Name="Quantity_GLEntryFormat">
+          <DataField>Quantity_GLEntryFormat</DataField>
+        </Field>
+        <Field Name="GLAccNo_GLEntry">
+          <DataField>GLAccNo_GLEntry</DataField>
+        </Field>
+        <Field Name="GLEntryPostDtCaption">
+          <DataField>GLEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="GL_Acc_Name">
+          <DataField>GL_Acc_Name</DataField>
+        </Field>
+        <Field Name="TxtNarration">
+          <DataField>TxtNarration</DataField>
+        </Field>
+        <Field Name="Narration">
+          <DataField>Narration</DataField>
+        </Field>
+        <Field Name="Division">
+          <DataField>Division</DataField>
+        </Field>
+        <Field Name="SalesGroup">
+          <DataField>SalesGroup</DataField>
+        </Field>
+        <Field Name="PostDate_VATEntry">
+          <DataField>PostDate_VATEntry</DataField>
+        </Field>
+        <Field Name="DocNo_VATEntry">
+          <DataField>DocNo_VATEntry</DataField>
+        </Field>
+        <Field Name="Amount_VATEntry">
+          <DataField>Amount_VATEntry</DataField>
+        </Field>
+        <Field Name="Amount_VATEntryFormat">
+          <DataField>Amount_VATEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_VATEntry">
+          <DataField>EntryNo_VATEntry</DataField>
+        </Field>
+        <Field Name="VATEntryPostDtCaption">
+          <DataField>VATEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="CustLedgEntryCurrCaption">
+          <DataField>CustLedgEntryCurrCaption</DataField>
+        </Field>
+        <Field Name="CustLedgEntry__Entry_No__">
+          <DataField>CustLedgEntry__Entry_No__</DataField>
+        </Field>
+        <Field Name="Amount_CustLedgEntry">
+          <DataField>Amount_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="Amount_CustLedgEntryFormat">
+          <DataField>Amount_CustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="PstDate_CustLedgEntry">
+          <DataField>PstDate_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_CustLedgEntry">
+          <DataField>DocNo_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_CustLedgEntry">
+          <DataField>Desc_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="RemainAmt_CustLedgEntry">
+          <DataField>RemainAmt_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="RemainAmt_CustLedgEntryFormat">
+          <DataField>RemainAmt_CustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_CustLedgEntry">
+          <DataField>CurrCode_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="CustNo_CustLedgEntry">
+          <DataField>CustNo_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_CustLedgEntry">
+          <DataField>AmtLCY_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_CustLedgEntryFormat">
+          <DataField>AmtLCY_CustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="RemainAmtLCY_CustLedgEntry">
+          <DataField>RemainAmtLCY_CustLedgEntry</DataField>
+        </Field>
+        <Field Name="RemainAmtLCY_CustLedgEntryFormat">
+          <DataField>RemainAmtLCY_CustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CustLedgEntryPostDtCaption">
+          <DataField>CustLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="DtldCustLedgEntryCurrCaption">
+          <DataField>DtldCustLedgEntryCurrCaption</DataField>
+        </Field>
+        <Field Name="PstDate_DtldCustLedgEntry">
+          <DataField>PstDate_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_DtldCustLedgEntry">
+          <DataField>DocNo_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmt_DtldCustLedgEntry">
+          <DataField>DebitAmt_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmt_DtldCustLedgEntryFormat">
+          <DataField>DebitAmt_DtldCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmt_DtldCustLedgEntry">
+          <DataField>CreditAmt_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmt_DtldCustLedgEntryFormat">
+          <DataField>CreditAmt_DtldCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_DtldCustLedgEntry">
+          <DataField>EntryNo_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DocType_DtldCustLedgEntry">
+          <DataField>DocType_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="CurrCode_DtldCustLedgEntry">
+          <DataField>CurrCode_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmtLCY_DtldCustLedgEntry">
+          <DataField>DebitAmtLCY_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmtLCY_DtldCustLedgEntryFormat">
+          <DataField>DebitAmtLCY_DtldCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmtLCY_DtldCustLedgEntry">
+          <DataField>CreditAmtLCY_DtldCustLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmtLCY_DtldCustLedgEntryFormat">
+          <DataField>CreditAmtLCY_DtldCustLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="DtldCustLedgEntryPostDtCaption">
+          <DataField>DtldCustLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_ReminderEntry">
+          <DataField>EntryNo_ReminderEntry</DataField>
+        </Field>
+        <Field Name="PstDate_ReminderEntry">
+          <DataField>PstDate_ReminderEntry</DataField>
+        </Field>
+        <Field Name="DocNo_ReminderEntry">
+          <DataField>DocNo_ReminderEntry</DataField>
+        </Field>
+        <Field Name="ReminderLevel_ReminderEntry">
+          <DataField>ReminderLevel_ReminderEntry</DataField>
+        </Field>
+        <Field Name="IntrstAmt_ReminderEntry">
+          <DataField>IntrstAmt_ReminderEntry</DataField>
+        </Field>
+        <Field Name="IntrstAmt_ReminderEntryFormat">
+          <DataField>IntrstAmt_ReminderEntryFormat</DataField>
+        </Field>
+        <Field Name="RemainAmt_ReminderEntry">
+          <DataField>RemainAmt_ReminderEntry</DataField>
+        </Field>
+        <Field Name="RemainAmt_ReminderEntryFormat">
+          <DataField>RemainAmt_ReminderEntryFormat</DataField>
+        </Field>
+        <Field Name="ReminderEntryPostDtCaption">
+          <DataField>ReminderEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="VendLedgEntryCurrCaption">
+          <DataField>VendLedgEntryCurrCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_VenLedgEntry">
+          <DataField>EntryNo_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="PstDate_VenLedgEntry">
+          <DataField>PstDate_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_VenLedgEntry">
+          <DataField>DocNo_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_VenLedgEntry">
+          <DataField>Desc_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_VenLedgEntry">
+          <DataField>Amt_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_VenLedgEntryFormat">
+          <DataField>Amt_VenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="RemainAmt_VenLedgEntry">
+          <DataField>RemainAmt_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="RemainAmt_VenLedgEntryFormat">
+          <DataField>RemainAmt_VenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_VenLedgEntry">
+          <DataField>CurrCode_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_VenLedgEntry">
+          <DataField>AmtLCY_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_VenLedgEntryFormat">
+          <DataField>AmtLCY_VenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="RemainAmtLCY_VenLedgEntry">
+          <DataField>RemainAmtLCY_VenLedgEntry</DataField>
+        </Field>
+        <Field Name="RemainAmtLCY_VenLedgEntryFormat">
+          <DataField>RemainAmtLCY_VenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="VendLedgEntryPostDtCaption">
+          <DataField>VendLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="DtldVendLedgEntryCurrCaption">
+          <DataField>DtldVendLedgEntryCurrCaption</DataField>
+        </Field>
+        <Field Name="PstDate_DtldVenLedgEntry">
+          <DataField>PstDate_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmt_DtldVenLedgEntry">
+          <DataField>DebitAmt_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmt_DtldVenLedgEntryFormat">
+          <DataField>DebitAmt_DtldVenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmt_DtldVenLedgEntry">
+          <DataField>CreditAmt_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmt_DtldVenLedgEntryFormat">
+          <DataField>CreditAmt_DtldVenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_DtldVenLedgEntry">
+          <DataField>EntryNo_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="DocType_DtldVenLedgEntry">
+          <DataField>DocType_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_DtldVenLedgEntry">
+          <DataField>DocNo_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="CurrCode_DtldVenLedgEntry">
+          <DataField>CurrCode_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmtLCY_DtldVenLedgEntry">
+          <DataField>DebitAmtLCY_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmtLCY_DtldVenLedgEntryFormat">
+          <DataField>DebitAmtLCY_DtldVenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmtLCY_DtldVenLedgEntry">
+          <DataField>CreditAmtLCY_DtldVenLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmtLCY_DtldVenLedgEntryFormat">
+          <DataField>CreditAmtLCY_DtldVenLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="DtldVendLedgEntryPostDtCaption">
+          <DataField>DtldVendLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_ItemLedgEntry">
+          <DataField>EntryNo_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="PstDate_ItemLedgEntry">
+          <DataField>PstDate_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_ItemLedgEntry">
+          <DataField>DocNo_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_ItemLedgEntry">
+          <DataField>Desc_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_ItemLedgEntry">
+          <DataField>Qty_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_ItemLedgEntryFormat">
+          <DataField>Qty_ItemLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="RemainQty_ItemLedgEntry">
+          <DataField>RemainQty_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="RemainQty_ItemLedgEntryFormat">
+          <DataField>RemainQty_ItemLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="Open_ItemLedgEntry">
+          <DataField>Open_ItemLedgEntry</DataField>
+        </Field>
+        <Field Name="ItemLedgEntryPostDtCaption">
+          <DataField>ItemLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="ItemLedEntryOpenCaption">
+          <DataField>ItemLedEntryOpenCaption</DataField>
+        </Field>
+        <Field Name="PstDate_ValueEntry">
+          <DataField>PstDate_ValueEntry</DataField>
+        </Field>
+        <Field Name="DocNo_ValueEntry">
+          <DataField>DocNo_ValueEntry</DataField>
+        </Field>
+        <Field Name="Desc_ValueEntry">
+          <DataField>Desc_ValueEntry</DataField>
+        </Field>
+        <Field Name="EntryNo_ValueEntry">
+          <DataField>EntryNo_ValueEntry</DataField>
+        </Field>
+        <Field Name="ValuedQty_ValueEntry">
+          <DataField>ValuedQty_ValueEntry</DataField>
+        </Field>
+        <Field Name="ValuedQty_ValueEntryFormat">
+          <DataField>ValuedQty_ValueEntryFormat</DataField>
+        </Field>
+        <Field Name="InvoicedQty_ValueEntry">
+          <DataField>InvoicedQty_ValueEntry</DataField>
+        </Field>
+        <Field Name="InvoicedQty_ValueEntryFormat">
+          <DataField>InvoicedQty_ValueEntryFormat</DataField>
+        </Field>
+        <Field Name="ValueEntryPostDtCaption">
+          <DataField>ValueEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_PhysInvtLedgEntry">
+          <DataField>EntryNo_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="PstDate_PhysInvtLedgEntry">
+          <DataField>PstDate_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_PhysInvtLedgEntry">
+          <DataField>DocNo_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_PhysInvtLedgEntry">
+          <DataField>Desc_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_PhysInvtLedgEntry">
+          <DataField>Qty_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_PhysInvtLedgEntryFormat">
+          <DataField>Qty_PhysInvtLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="UnitAmt_PhysInvtLedgEntry">
+          <DataField>UnitAmt_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="UnitAmt_PhysInvtLedgEntryFormat">
+          <DataField>UnitAmt_PhysInvtLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="UnitCost_PhysInvtLedgEntry">
+          <DataField>UnitCost_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="UnitCost_PhysInvtLedgEntryFormat">
+          <DataField>UnitCost_PhysInvtLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="Amt_PhysInvtLedgEntry">
+          <DataField>Amt_PhysInvtLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_PhysInvtLedgEntryFormat">
+          <DataField>Amt_PhysInvtLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="PhysInvtLedgEntryPostDtCaption">
+          <DataField>PhysInvtLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_ResLedgEntry">
+          <DataField>PstDate_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_ResLedgEntry">
+          <DataField>Desc_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_ResLedgEntry">
+          <DataField>DocNo_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="EntryNo_ResLedgEntry">
+          <DataField>EntryNo_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_ResLedgEntry">
+          <DataField>Qty_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_ResLedgEntryFormat">
+          <DataField>Qty_ResLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="UnitCost_ResLedgEntry">
+          <DataField>UnitCost_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="UnitCost_ResLedgEntryFormat">
+          <DataField>UnitCost_ResLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="UnitPrice_ResLedgEntry">
+          <DataField>UnitPrice_ResLedgEntry</DataField>
+        </Field>
+        <Field Name="UnitPrice_ResLedgEntryFormat">
+          <DataField>UnitPrice_ResLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="ResLedgEntryPostDtCaption">
+          <DataField>ResLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_JobLedgEntry">
+          <DataField>PstDate_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_JobLedgEntry">
+          <DataField>DocNo_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_JobLedgEntry">
+          <DataField>Desc_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_JobLedgEntry">
+          <DataField>Qty_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_JobLedgEntryFormat">
+          <DataField>Qty_JobLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="UnitCostLCY_JobLedgEntry">
+          <DataField>UnitCostLCY_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="UnitCostLCY_JobLedgEntryFormat">
+          <DataField>UnitCostLCY_JobLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_JobLedgEntry">
+          <DataField>UnitPriceLCY_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="UnitPriceLCY_JobLedgEntryFormat">
+          <DataField>UnitPriceLCY_JobLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_JobLedgEntry">
+          <DataField>EntryNo_JobLedgEntry</DataField>
+        </Field>
+        <Field Name="JobLedgEntryPostDtCaption">
+          <DataField>JobLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="BankAccLedgEntryCurrCaption">
+          <DataField>BankAccLedgEntryCurrCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_BankAccLedgEntry">
+          <DataField>EntryNo_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="PstDate_BankAccLedgEntry">
+          <DataField>PstDate_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_BankAccLedgEntry">
+          <DataField>DocNo_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_BankAccLedgEntry">
+          <DataField>Desc_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmt_BankAccLedgEntry">
+          <DataField>DebitAmt_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmt_BankAccLedgEntryFormat">
+          <DataField>DebitAmt_BankAccLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmt_BankAccLedgEntry">
+          <DataField>CreditAmt_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmt_BankAccLedgEntryFormat">
+          <DataField>CreditAmt_BankAccLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CurrCode_BankAccLedgEntry">
+          <DataField>CurrCode_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmtLCY_BankAccLedgEntry">
+          <DataField>DebitAmtLCY_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="DebitAmtLCY_BankAccLedgEntryFormat">
+          <DataField>DebitAmtLCY_BankAccLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CreditAmtLCY_BankAccLedgEntry">
+          <DataField>CreditAmtLCY_BankAccLedgEntry</DataField>
+        </Field>
+        <Field Name="CreditAmtLCY_BankAccLedgEntryFormat">
+          <DataField>CreditAmtLCY_BankAccLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="BankAccLedgEntryPostDtCaption">
+          <DataField>BankAccLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="DocNo_CheckLedgEntry">
+          <DataField>DocNo_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="PstDate_CheckLedgEntry">
+          <DataField>PstDate_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_CheckLedgEntry">
+          <DataField>Desc_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_CheckLedgEntry">
+          <DataField>Amt_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_CheckLedgEntryFormat">
+          <DataField>Amt_CheckLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="Open_CheckLedgEntry">
+          <DataField>Open_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="EntryNo_CheckLedgEntry">
+          <DataField>EntryNo_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="CheckDate_CheckLedgEntry">
+          <DataField>CheckDate_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="CheckNo_CheckLedgEntry">
+          <DataField>CheckNo_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="CheckType_CheckLedgEntry">
+          <DataField>CheckType_CheckLedgEntry</DataField>
+        </Field>
+        <Field Name="CheckLedgEntryOpenCaption">
+          <DataField>CheckLedgEntryOpenCaption</DataField>
+        </Field>
+        <Field Name="CheckLedgEntryPostDtCaption">
+          <DataField>CheckLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="CheckLedgEntryCheckDtCaption">
+          <DataField>CheckLedgEntryCheckDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_FALedgEntry">
+          <DataField>PstDate_FALedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_FALedgEntry">
+          <DataField>DocNo_FALedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_FALedgEntry">
+          <DataField>Desc_FALedgEntry</DataField>
+        </Field>
+        <Field Name="EntryNo_FALedgEntry">
+          <DataField>EntryNo_FALedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_FALedgEntry">
+          <DataField>Amt_FALedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_FALedgEntryFormat">
+          <DataField>Amt_FALedgEntryFormat</DataField>
+        </Field>
+        <Field Name="AmtLCY_FALedgEntry">
+          <DataField>AmtLCY_FALedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_FALedgEntryFormat">
+          <DataField>AmtLCY_FALedgEntryFormat</DataField>
+        </Field>
+        <Field Name="FALedgEntryPostDtCaption">
+          <DataField>FALedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_MaintLedgEntry">
+          <DataField>EntryNo_MaintLedgEntry</DataField>
+        </Field>
+        <Field Name="PostingDate_MaintLedgEntry">
+          <DataField>PostingDate_MaintLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_MaintLedgEntry">
+          <DataField>DocNo_MaintLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_MaintLedgEntry">
+          <DataField>Desc_MaintLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_MaintLedgEntry">
+          <DataField>Amt_MaintLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_MaintLedgEntryFormat">
+          <DataField>Amt_MaintLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="AmtLCY_MaintLedgEntry">
+          <DataField>AmtLCY_MaintLedgEntry</DataField>
+        </Field>
+        <Field Name="AmtLCY_MaintLedgEntryFormat">
+          <DataField>AmtLCY_MaintLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="MaintenanceLedgEntryPostDtCaption">
+          <DataField>MaintenanceLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="PstDate_InsCoverageLedgEntry">
+          <DataField>PstDate_InsCoverageLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_InsCoverageLedgEntry">
+          <DataField>DocNo_InsCoverageLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_InsCoverageLedgEntry">
+          <DataField>Desc_InsCoverageLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_InsCoverageLedgEntry">
+          <DataField>Amt_InsCoverageLedgEntry</DataField>
+        </Field>
+        <Field Name="Amt_InsCoverageLedgEntryFormat">
+          <DataField>Amt_InsCoverageLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="EntryNo_InsCoverageLedgEntry">
+          <DataField>EntryNo_InsCoverageLedgEntry</DataField>
+        </Field>
+        <Field Name="InsurNo_InsCoverageLedgEntry">
+          <DataField>InsurNo_InsCoverageLedgEntry</DataField>
+        </Field>
+        <Field Name="InsCoverageLedgEntryPostDtCaption">
+          <DataField>InsCoverageLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_CapLedgEntry">
+          <DataField>EntryNo_CapLedgEntry</DataField>
+        </Field>
+        <Field Name="PstDate_CapLedgEntry">
+          <DataField>PstDate_CapLedgEntry</DataField>
+        </Field>
+        <Field Name="DocNo_CapLedgEntry">
+          <DataField>DocNo_CapLedgEntry</DataField>
+        </Field>
+        <Field Name="Desc_CapLedgEntry">
+          <DataField>Desc_CapLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_CapLedgEntry">
+          <DataField>Qty_CapLedgEntry</DataField>
+        </Field>
+        <Field Name="Qty_CapLedgEntryFormat">
+          <DataField>Qty_CapLedgEntryFormat</DataField>
+        </Field>
+        <Field Name="CapLedgEntryPostDtCaption">
+          <DataField>CapLedgEntryPostDtCaption</DataField>
+        </Field>
+        <Field Name="EntryNo_WhseEntry">
+          <DataField>EntryNo_WhseEntry</DataField>
+        </Field>
+        <Field Name="RegDate_WhseEntry">
+          <DataField>RegDate_WhseEntry</DataField>
+        </Field>
+        <Field Name="ItemNo_WhseEntry">
+          <DataField>ItemNo_WhseEntry</DataField>
+        </Field>
+        <Field Name="Desc_WhseEntry">
+          <DataField>Desc_WhseEntry</DataField>
+        </Field>
+        <Field Name="Qty_WhseEntry">
+          <DataField>Qty_WhseEntry</DataField>
+        </Field>
+        <Field Name="Qty_WhseEntryFormat">
+          <DataField>Qty_WhseEntryFormat</DataField>
+        </Field>
+        <Field Name="RefNo_WhseEntry">
+          <DataField>RefNo_WhseEntry</DataField>
+        </Field>
+        <Field Name="UOMCode_WhseEntry">
+          <DataField>UOMCode_WhseEntry</DataField>
+        </Field>
+        <Field Name="WhseEntryRegisteringDateCaption">
+          <DataField>WhseEntryRegisteringDateCaption</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
